@@ -4,11 +4,12 @@ Oracle 12c Enterprise Edition 12.2.0 and MongoDB 4 in Docker
 
 # To download the image with docker 
 
-docker pull wxkin/oracle-12c-mongo4
+`docker pull wxkin/oracle-12c-mongo4`
 
 # If you need a proxy configuration:
-sudo mkdir /etc/systemd/system/docker.service.d
-Create file /etc/systemd/system/docker.service.d/http-proxy.conf with the following content:
+`sudo mkdir /etc/systemd/system/docker.service.d`
+
+Create file `/etc/systemd/system/docker.service.d/http-proxy.conf` with the following content:
 
 ```
 [Service]

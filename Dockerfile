@@ -14,7 +14,10 @@ RUN yum install -y epel-release && yum install -y xorg-x11-server-Xvfb x11vnc fl
 
 ADD entrypoint.sh /entrypoint.sh
 
+# The MongoDB IP
+EXPOSE 27017
 EXPOSE 1521
+
 EXPOSE 8080
 EXPOSE 6800
 VOLUME ["/docker-entrypoint-initdb.d"]

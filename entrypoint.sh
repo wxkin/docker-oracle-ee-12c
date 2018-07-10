@@ -62,11 +62,11 @@ printf '
 
 installMongo(){
 	echo "Installing MongoDB"
-	sudo yum install -y mongodb-org-4.0.0 mongodb-org-server-4.0.0 mongodb-org-shell-4.0.0 mongodb-org-mongos-4.0.0 mongodb-org-tools-4.0.0
+        yum install -y mongodb-org-4.0.0 mongodb-org-server-4.0.0 mongodb-org-shell-4.0.0 mongodb-org-mongos-4.0.0 mongodb-org-tools-4.0.0
 	# Because of SELinux enable access to port.
 	semanage port -a -t mongod_port_t -p tcp 27017
 	echo "Starting MongoDB service"
-	sudo service mongod start
+	service mongod start
 }
 
 addMongoRepository

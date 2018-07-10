@@ -69,8 +69,8 @@ installMongo(){
 	sudo service mongod start
 }
 
-addMongoRepository()
-installMongo()
+addMongoRepository
+installMongo
 
 case "$1" in
 	'')
